@@ -4,7 +4,7 @@ void prime(int num){
     if(num < 2){
         return;
     }
-    for (int i = 2; i <= num-1; i++)
+    for (int i = 2; i <= sqrt(num); i++)
     {
         if(num%i==0)
             return;
