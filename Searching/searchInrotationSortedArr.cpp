@@ -15,11 +15,12 @@ class Solution {
                     else end = mid-1;
                 }
                 else{
-                    if(arr[start]<=key || key<arr[mid]) end = mid-1;
-                    else start = mid+1;
+                    if(arr[mid] <= key && arr[end]>=key)
+                    start = mid+1;
+                    else end=mid-1;
                 }
             }
         }
-        return index;
+        return -1;
     }
 };
