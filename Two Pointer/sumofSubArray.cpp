@@ -17,4 +17,6 @@ int main(){
             last--;
         }
     }
+    cout<<"Not present"<<endl;
+    return 0;
 }
